@@ -6,7 +6,7 @@
 3. Thread life cycle:
    >5 main states: New, Runnable, Running, Waiting/Blocked, Terminated/Died
 4. Thread methods:
-   >Sleep, run, wait and join.
+   >Sleep, wait and join.
 */
 
 public class MultiThr extends Thread{
