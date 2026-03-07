@@ -1,0 +1,12 @@
+- Iterable is the root interface above Collection interface.
+- Collections is a class, unlike Collection.
+
+Arraylist and linkedlist:
+- Dynamic array vs linked list data structure.
+- Fast random access vs fast insertion and deletion.
+
+Hashing:
+- A technique used to store and retrieve data using a hashvalue(index).
+- Collision avoidance methods.
+    - Horizontal chaining
+    - Linear Probing
