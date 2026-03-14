@@ -1,0 +1,30 @@
+Floyd's cycle detection:
+1. Initialize two pointers, `slow` and `fast`, to the head of the linked list.
+2. Move the `slow` pointer one step at a time and the `fast` pointer two steps at a time.
+3. If there is a cycle in the linked list, the `fast` pointer will eventually meet the `slow` pointer. 
+   If there is no cycle, the `fast` pointer will reach the end of the list.
+4. If the `slow` and `fast` pointers meet, there is a cycle in the linked list. To find the starting point of the cycle:
+   - Reset the `slow` pointer to the head of the linked list while keeping the `fast` pointer at the meeting point.
+   - Move both pointers one step at a time until they meet again. The point at which they meet will be the starting point
+     of the cycle in the linked list.
+
+Swapping nodes in a linked list:
+1. To swap two nodes in a linked list, you need to keep track of the previous nodes of the nodes you want to swap.
+2. Let's say you want to swap nodes `A` and `B`. You need to find the previous nodes of `A` and `B`, let's call them `prevA` and `prevB`.
+3. If `prevA` is not null, set `prevA.next` to `B`. If `prevB` is not null, set `prevB.next` to `A`.
+4. Swap the `next` pointers of `A` and `B`. Set `A.next` to `B.next` and `B.next` to `A.next`.
+5. If `A` is the head of the linked list, update the head to point to `B`. If `B` is the head of the linked list, update the head to point to `A`.
+
+LL leet Problems: 2,19,21,23,24,25,61,82,83.
+
+Josephus problem:
+1. The Josephus problem is a theoretical problem related to a certain elimination game.
+2. The problem can be solved using a linked list by simulating the elimination process.
+3. Create a circular linked list with `n` nodes, where each node represents a person in the game.
+4. Start from the head of the linked list and move `k-1` times to find the node to be eliminated.
+5. Remove the node from the linked list and continue the process until only one node remains, which will be the survivor.
+
+Stack:
+1. A stack is a linear data structure that follows the LIFO/FILO principle.
+2. The main operations of a stack are push, pop, peek, empty, and size.
+3. Stack is considered as legacy class, because it uses Vector implementation.

@@ -11,5 +11,6 @@ public class Recur {
     }
     public static void main(String[] args) {
         int res=fact(5);
+        System.out.println(res);
     }
 }

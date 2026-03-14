@@ -1,0 +1,18 @@
+Recursion:
+> 6 Types
+  - Direct Recursion: Calling the method within itself directly w new parameters.
+  - Indirect Recursion: When 2 or more methods call each other in a loop until base case is achieved.
+  - Tail Recursion: When the recursion is called at the end of the method (return statement).
+  - Non-Tail Recursion: Anywhere but the tail.
+  - Linear Recursion: When a method calls itself only once.
+  - Binary/Tree Recursion: When a method calls itself more than once. 
+
+> Catalan number series
+  C0=1, C1=1
+  C2=C0*C1 + C1*C2
+  C3=C0*C2 + C1*C1 + C2*C0
+  and so on
+  General formula, Cn= (2n!)/((n+1)!n!)
+
+Linked List:
+-SLL, DLL, and CLL(singly and doubly)
