@@ -1,0 +1,28 @@
+BST(Binary search tree): A binary tree where each node has at most two children, and the left child is less than the parent node, while the right child is greater than the parent node. 
+
+This property allows for efficient searching, insertion, and deletion operations.
+In a BST, the left subtree of a node contains only nodes with values less than the node's value, and the right subtree contains only nodes with values greater than the node's value. This structure allows for efficient searching, as you can quickly eliminate half of the remaining nodes at each step.
+The time complexity for searching, inserting, and deleting in a BST is O(h), where h is the height of the tree.
+
+8,6,5,10,12,20,30. Insert 4,7,11
+        8
+    6       10
+  5  7    11  12
+4               20
+                  30
+
+-----------------------------------------------------------------------------------------------------
+
+Heap: A complete binary tree that satisfies the heap property, which can be either a max-heap or a min-heap. 
+
+In a max-heap, each parent node is greater than or equal to its children, while in a min-heap, each parent node is less than or equal to its children. Heaps are commonly used to implement priority queues and for efficient sorting algorithms like heapsort.
+In a max-heap, the largest element is always at the root, while in a min-heap, the smallest element is at the root. Heaps are typically implemented as arrays, where the parent-child relationships can be easily determined using index calculations.
+
+-----------------------------------------------------------------------------------------------------
+
+Trie: A trie, also known as a prefix tree, is a tree-like data structure that is used to store a dynamic set of strings. 
+
+Each node in a trie represents a common prefix of the strings stored in the trie. The edges between nodes represent individual characters, and the path from the root to a node represents a string or a prefix of a string. 
+Tries are commonly used for tasks such as prefixx search, autocomplete, spell checking, and IP routing.
+
+-----------------------------------------------------------------------------------------------------
