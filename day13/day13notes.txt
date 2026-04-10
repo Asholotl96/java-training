@@ -1,4 +1,4 @@
-BST(Binary search tree): A binary tree where each node has at most two children, and the left child is less than the parent node, while the right child is greater than the parent node. 
+BST(Binary search tree): A binary tree where each node has at most two children, and the left child is less than the parent node, while the right child is greater than the parent node.
 
 This property allows for efficient searching, insertion, and deletion operations.
 In a BST, the left subtree of a node contains only nodes with values less than the node's value, and the right subtree contains only nodes with values greater than the node's value. This structure allows for efficient searching, as you can quickly eliminate half of the remaining nodes at each step.
@@ -13,16 +13,44 @@ The time complexity for searching, inserting, and deleting in a BST is O(h), whe
 
 -----------------------------------------------------------------------------------------------------
 
-Heap: A complete binary tree that satisfies the heap property, which can be either a max-heap or a min-heap. 
+Heap: A complete binary tree that satisfies the heap property, which can be either a max-heap or a min-heap.
 
 In a max-heap, each parent node is greater than or equal to its children, while in a min-heap, each parent node is less than or equal to its children. Heaps are commonly used to implement priority queues and for efficient sorting algorithms like heapsort.
 In a max-heap, the largest element is always at the root, while in a min-heap, the smallest element is at the root. Heaps are typically implemented as arrays, where the parent-child relationships can be easily determined using index calculations.
 
 -----------------------------------------------------------------------------------------------------
 
-Trie: A trie, also known as a prefix tree, is a tree-like data structure that is used to store a dynamic set of strings. 
+Trie: A trie, also known as a prefix tree, is a tree-like data structure that is used to store a dynamic set of strings.
 
-Each node in a trie represents a common prefix of the strings stored in the trie. The edges between nodes represent individual characters, and the path from the root to a node represents a string or a prefix of a string. 
+Each node in a trie represents a common prefix of the strings stored in the trie. The edges between nodes represent individual characters, and the path from the root to a node represents a string or a prefix of a string.
 Tries are commonly used for tasks such as prefixx search, autocomplete, spell checking, and IP routing.
 
+         root node
+       a           d
+     n           a   o
+   d  t        d
+
 -----------------------------------------------------------------------------------------------------
+
+Segment Tree: A segment tree is a binary tree data structure that is used for storing information about intervals or segments. It allows for efficient querying and updating of these intervals.
+
+Each node in a segment tree represents an interval, and the tree is built in such a way that the intervals represented by the nodes are disjoint and cover the entire range of the input data. Segment trees are commonly used for range queries, such as finding the minimum, maximum, sum, or greatest common divisor (GCD) of a range of elements in an array.
+
+[5,6,7,8,9,10]
+
+           [0-5]10
+        /          \
+     [0-2]7         [3-5]10
+    /     \        /      \
+  [0-1]6  [2]7   [3-4]9   [5]10
+  /   \          /   \
+  5   6          8   9
+
+------------------------------------------------------------------------------------------------------
+
+Association, aggregation, composition: These are concepts in object-oriented programming that describe relationships between classes.
+Association: A relationship between two classes where one class uses or interacts with another class. It is a weak relationship, and the classes can exist independently of each other. For example, a "Student" class may have an association with a "Course" class, where a student can enroll in multiple courses, and a course can have multiple students.
+
+Aggregation: A stronger relationship than association, where one class is a part of another class, but the part can exist independently of the whole. For example, a "Car" class may have an aggregation relationship with a "Wheel" class, where a car has multiple wheels, but the wheels can exist independently of the car.
+
+Composition: The strongest relationship, where one class is a part of another class, and the part cannot exist independently of the whole. For example, a "House" class may have a composition relationship with a "Room" class, where a house is made up of rooms, and the rooms cannot exist without the house.
