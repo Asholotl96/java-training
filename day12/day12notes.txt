@@ -1,0 +1,32 @@
+leetcode 503 Next Greater Element II
+Given a circular array (the next element of the last element is the first element of the array here), 
+print the Next Greater Number for every element. The Next Greater Number of a number x is the first greater number 
+to its traversing-order next in the array, which means you could search circularly to find its next greater number. 
+If it doesn't exist, output -1 for this number.
+
+leetcode 739 Daily Temperatures
+Given a list of daily temperatures T, return a list such that, for each day in the input, tells you how many 
+days you would have to wait until a warmer temperature. If there is no future day for which this is possible, put 0 instead.
+
+Problems: 150. Evaluate Reverse Polish Notation.
+          155. Min Stack.
+          496. Next Greater Element I.
+          239. Sliding Window Maximum.
+
+Queue:
+1. A queue is a linear data structure that follows the FIFO principle.
+2. The main operations of a queue are enqueue(offer), dequeue(poll), peek, isEmpty, and size.
+
+Binary Tree:
+1. A binary tree is a tree data structure in which each node has at most two children, referred to as the left child and the right child.
+2. Parent, child, sibling relationships can be defined in a binary tree. The topmost node is called the root, and nodes with no children are called leaves.
+3. The main operations of a binary tree include insertion, deletion, traversal (preorder, inorder, postorder), and searching for a specific value.
+4. Binary trees can be used to implement various data structures such as binary search trees, heaps, and expression trees.
+
+Tree Traversal:
+1. DFS (Depth-First Search) and BFS (Breadth-First Search) are two common tree traversal techniques.
+2. BFS traverses the tree level by level, while DFS explores as far as possible along each branch before backtracking. Aka. level order traversal.
+3. DFS can be implemented using recursion or a stack, while BFS can be implemented using a queue.
+    - Preorder Traversal (N,L,R): Visit the root node first, then recursively visit the left subtree, followed by the right subtree.
+    - Inorder Traversal (L,N,R): Recursively visit the left subtree first, then visit the root node, followed by the right subtree.
+    - Postorder Traversal (L,R,N): Recursively visit the left subtree first, then the right subtree, followed by the root node.

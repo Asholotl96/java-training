@@ -1,4 +1,4 @@
-
+//Leetcode 503
 import java.util.*;
 
 public class NxtGrtElem {

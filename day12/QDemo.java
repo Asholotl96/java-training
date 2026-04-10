@@ -1,6 +1,6 @@
-//Queue implimentation without using java.util.Queue using two stacks
+//Queue implimentation without using java.util. Queue using two stacks
 import java.util.*;
-class QDemo
+class Que
 {
     Stack<Integer> s1 = new Stack<>();
     Stack<Integer> s2 = new Stack<>();
@@ -26,14 +26,20 @@ class QDemo
         }
         return s2.peek();
     }
+
+    public boolean isEmpty(){
+        return s1.isEmpty() && s2.isEmpty();
+    }
+}
+public class QDemo{
     public static void main(String[] args){
-        QDemo q = new QDemo();
+        Que q = new Que();
         q.offer(10);
         q.offer(20);
         q.offer(30);
-        System.out.println("QDemo: "+q.s1);
-        System.out.println("Remove: "+q.poll());
-        System.out.println("QDemo: "+q.s1);
         System.out.println("Front element: "+q.peek());
+        System.out.println("Remove: "+q.poll());
+        System.out.println("Front element: "+q.peek());
+        System.out.println("IsEmpty"+q.isEmpty());
     }
 }
